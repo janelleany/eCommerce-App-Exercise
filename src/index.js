@@ -9,15 +9,42 @@ import App from './App';
 
 import registerServiceWorker from './registerServiceWorker';
 
+import categories from './json/categories'
+import products from './json/products'
+import users from './json/users'
+
+
+let initialState = {
+    categoriesKey: categories,
+    productsKey: products,
+    usersKey: users
+};
+
+//refactor for master reducer and create sub reducers
+let reducer = (state = initialState, action) => {
+    return state;
+}
+    // switch (action.type) {
+    //     case 'type': {
+    //         return {...state, key: value}
+    //     }
+    //     case 'type': {
+    //         return {...state, key: value}
+    //     }
+    //     case 'type': {
+    //         return {...state, key: value}
+    //     }
+    //     default: return state;
+    // }
+
 let store = createStore(reducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 
-let reducer = (state = initialState, action) => {
-    switch (action.type) {
-        case 'type':
-            
-    
-    }
-}
 
-ReactDOM.render(<App />, document.getElementById('root'));
+let UI = 
+    <Provider store={store}> 
+        <App />
+    </Provider>
+
+
+ReactDOM.render(UI, document.getElementById('root'));
 registerServiceWorker();

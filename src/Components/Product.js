@@ -1,14 +1,12 @@
 import React from 'react';
-import './App.css';
-
-import HomepageScreen from './Screens/HomepageScreen'
+import '../App.css';
 
 
 
-let App = () => {
+let Product = () => {
   return (
     <div>
-      <HomepageScreen />
+      Product has rendered
     </div>
   )
 }
@@ -32,4 +30,4 @@ let App = () => {
   }
 } */}
 
-export default App;
+export default Product;

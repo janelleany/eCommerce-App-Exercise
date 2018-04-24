@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 
-import { HashRouter as Router, Route, Link } from "react-router-dom";
+import { HashRouter as Router, Route } from "react-router-dom";
 
 import HomepageScreen from './Screens/HomepageScreen';
 import CategoryScreen from './Screens/CategoryScreen';

@@ -2,18 +2,24 @@ import React from 'react';
 import './App.css';
 
 import { HashRouter as Router, Route, Link } from "react-router-dom";
+
 import HomepageScreen from './Screens/HomepageScreen';
+import CategoryScreen from './Screens/CategoryScreen';
+import ProductScreen from './Screens/ProductScreen';
+import CartScreen from './Screens/CartScreen';
+import LoginScreen from './Screens/LoginScreen';
 
 
 const App = () => {
   return (
     <Router>
-      <Route path="/" exact component={HomepageScreen}/>
-      <Route path="/categories" component={CategoryScreen}/>
-      <Route path="/" exact component={ProductScreen}/>
-      <Route path="/" exact component={HomepageScreen}/>
-      <Route path="/" exact component={HomepageScreen}/>
-      <Route path="/" exact component={HomepageScreen}/>
+      <div>
+        <Route path="/" exact component={HomepageScreen}/>
+        <Route path="/category" component={CategoryScreen}/>
+        <Route path="/product" component={ProductScreen}/>
+        <Route path="/cart" component={CartScreen}/>
+        <Route path="/login" component={LoginScreen}/>
+      </div>
     </Router>
   )
 }

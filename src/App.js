@@ -1,15 +1,20 @@
 import React from 'react';
 import './App.css';
 
-import HomepageScreen from './Screens/HomepageScreen'
+import { HashRouter as Router, Route, Link } from "react-router-dom";
+import HomepageScreen from './Screens/HomepageScreen';
 
 
-
-let App = () => {
+const App = () => {
   return (
-    <div>
-      <HomepageScreen />
-    </div>
+    <Router>
+      <Route path="/" exact component={HomepageScreen}/>
+      <Route path="/categories" component={CategoryScreen}/>
+      <Route path="/" exact component={ProductScreen}/>
+      <Route path="/" exact component={HomepageScreen}/>
+      <Route path="/" exact component={HomepageScreen}/>
+      <Route path="/" exact component={HomepageScreen}/>
+    </Router>
   )
 }
 

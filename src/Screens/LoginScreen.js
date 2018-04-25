@@ -1,6 +1,9 @@
 import React from 'react';
 import '../App.css';
 
+let mapDispatchToProps = (state) => {
+  return {  };
+}
 
 let LoginScreen = () => {
   return (

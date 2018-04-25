@@ -6,7 +6,7 @@ import '../App.css';
 let Product = () => {
   return (
     <div>
-      Product has rendered
+      Product Content has rendered
     </div>
   )
 }

@@ -4,14 +4,15 @@ import '../App.css';
 import Banner from '../Components/Banner';
 import Sidebar from '../Components/Sidebar';
 
-let HomepageScreen = () => {
+let ProductScreen = () => {
   return (
     <div>
       < Banner />
       < Sidebar />
+      <p>A ProductScreen has rendered</p>
     </div>
   )
 }
 
 
-export default HomepageScreen;
+export default ProductScreen;

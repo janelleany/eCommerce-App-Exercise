@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { createStore } from 'redux';
-import { connect, Provider } from 'react-redux';
+import { Provider } from 'react-redux';
 
 import './index.css';
 
@@ -17,7 +17,11 @@ import users from './json/users'
 let initialState = {
     categoriesKey: categories,
     productsKey: products,
-    usersKey: users
+    usersKey: users,
+    cartKey: [
+        {name: "aston martin new vantage", price: "$150,000"}
+    ],
+    isLoggedIn: false
 };
 
 //refactor for master reducer and create sub reducers
